@@ -1,16 +1,16 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System; 
+using System.Windows.Forms; 
 
-namespace SpaceShooter
+namespace SpaceShooter 
 {
-    static class Program
+    static class Program 
     {
-        [STAThread]
-        static void Main()
+        [STAThread] 
+        static void Main() // Главный метод - точка входа в приложение
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuForm()); // Запускаем меню 
+            Application.EnableVisualStyles(); // Включение визуальных стилей 
+            Application.SetCompatibleTextRenderingDefault(false); // Установка режима рендеринга текста 
+            Application.Run(new MenuForm()); // Запуск приложения с отображением формы меню
         }
     }
 }
